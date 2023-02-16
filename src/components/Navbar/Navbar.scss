@@ -1,0 +1,147 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  &.active{
+    background: rgba(55, 55, 55, 0.15);
+    backdrop-filter: blur(10px);
+  }
+
+  .Nav_container {
+    position: relative;
+    max-width: 1224px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+
+    .logo {
+      background: #fff;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav_links {
+      display: flex;
+      list-style: none;
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+
+      li {
+        a {
+          margin-left: 3rem;
+          text-decoration: none;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 0.95rem;
+          opacity: 0.6;
+          transition: 0.3s all ease;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .social_icons {
+      display: flex;
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+
+      div {
+        margin-left: 1rem;
+        svg {
+          color: #fff;
+          opacity: 0.6;
+          cursor: pointer;
+          transition: all ease 0.3s;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .menu {
+      background: #fff;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      display: none;
+
+      @media screen and (max-width:800px) {
+        display: flex;
+      }
+      
+      svg {
+        height: 70%;
+        width: 70%;
+      }
+    }
+      .closeMenu {
+        background: #000;
+        width: 4rem;
+        height: 4rem;
+        position: fixed;
+        border-radius: 50%;
+        right: 0;
+        top: 0;
+      }
+
+      .menuX {
+        color: #ffffff;
+        position: fixed;
+        top: 2rem;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        svg {
+          cursor: pointer;
+          color: wheat;
+          width: 1.5rem;
+          height: 1.5rem;
+          position: absolute;
+          top: 2rem;
+          right: 2rem;
+        }
+        
+                  li {
+                    list-style: none;
+                    margin-top: 1rem;
+        
+                    a {
+                      text-decoration: none;
+                      color: white;
+                      text-transform: uppercase;
+                      opacity: 0.6;
+                      font-size: 1.5rem;
+                      &:hover{
+                          opacity: 1;
+                        }
+                    }
+                  }
+      }
+    }
+  
+}
