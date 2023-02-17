@@ -1,6 +1,6 @@
-import { FaHtml5, FaCss3, FaNodeJs, FaReact, FaSass, FaFigma, FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane, FaDribbble, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaNodeJs, FaReact, FaSass, FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane, FaDribbble, FaInstagram, FaLinkedin ,FaBootstrap,FaPython,FaJava,FaGitAlt} from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
-import { SiTypescript } from "react-icons/si";
+import { SiFramer,SiTailwindcss ,SiMysql,SiFirebase,SiCplusplus,SiC,SiVite,SiMongodb} from "react-icons/si";
 import { BsMedium } from "react-icons/bs";
 // import portfolio from "./assets/portfolio.jp";
 import work1 from "./assets/work1.png";
@@ -13,7 +13,6 @@ import work6 from "./assets/work6.png";
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"]
 
 export const socialIcons = [
-  <FaDribbble />,
   <FaInstagram />,
   <FaLinkedin />,
   <BsMedium />
@@ -40,50 +39,11 @@ export const bios = [
   }
 ]
 
-export const icons = [<FaHtml5 />, <FaCss3 />, <DiJavascript />, <SiTypescript />, <FaReact />, <FaNodeJs />, <FaSass />, <FaFigma />]
+export const frontend = [<FaHtml5 />, <FaCss3 />, <DiJavascript />, <FaReact />, <FaSass /> ,<SiFramer/>,<FaBootstrap/>,<SiTailwindcss/>]
+export const backend = [<FaNodeJs />, <SiMysql />, <SiFirebase />, <FaPython />, <FaJava/>,<SiMongodb/>, ]
+export const other = [<FaGitAlt />, <SiCplusplus />, <SiC />, <SiVite /> ]
 
-export const experiences = [
-  {
-    id: 1,
-    year: "2022",
-    position: "Senior Web Developer",
-    company: "shop.com.mm"
-  },
-  {
-    di: 2,
-    year: "2021",
-    position: "Junior Web Developer",
-    company: "shop.com.mm"
-  },
-  {
-    id: 3,
-    year: "2019",
-    position: "Intern Web Dveloper",
-    company: "shop.com.mm"
-  }
-]
-export const finishes = [
-  {
-    id: 1,
-    number: '6+',
-    itemName: "Years Of Experience"
-  },
-  {
-    id: 2,
-    number: "150+",
-    itemName: "Satisfied Customers"
-  },
-  {
-    id: 3,
-    number: "669+",
-    itemName: "Designed Items"
-  },
-  {
-    id: 4,
-    number: "117+",
-    itemName: "Clients Served"
-  }
-]
+
 export const workImages = [
   {
     id: 1,

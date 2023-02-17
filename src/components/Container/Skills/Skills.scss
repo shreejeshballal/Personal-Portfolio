@@ -1,0 +1,46 @@
+.select {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+
+  button {
+    color: #000;
+    background: #fff;
+    padding: 0.65rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-family: "Poppins";
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+    &.active {
+      background: #8c12f0;
+      color: #fff;
+    }
+  }
+}
+  .skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 700px;
+    gap: 4rem;
+
+    .icon {
+      display: flex;
+
+      svg {
+        display: flex;
+        height: 100px;
+        width: 100px;
+        border-radius: 10%;
+        color: #fff;
+      }
+    }
+  }
+
