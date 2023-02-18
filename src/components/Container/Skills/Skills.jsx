@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { frontend, backend, other } from "../../../Data";
+import { frontend, backend, other,finishes } from "../../../Data";
 import { motion } from "framer-motion";
 import "./Skills.scss";
 const Skills = () => {
@@ -8,7 +8,7 @@ const Skills = () => {
     <div className="container" id="skills">
       <div className="title">
         <span>What am I Good at?</span>
-        <h1>Skills</h1>
+        <h1>Skills and Experience</h1>
       </div>
       <div className="select">
         <button
@@ -82,6 +82,17 @@ const Skills = () => {
               </motion.div>
             );
           })}
+      </div>
+      <div className="finishes_container">  
+      {finishes.map((finish)=>{
+        return (
+          <div className="finishes" key={finish.id}>
+            <div className="number">{finish.number}</div>
+            <div className="item_name">{finish.itemName}</div>
+            </div>
+            )
+      })}
+
       </div>
     </div>
   );

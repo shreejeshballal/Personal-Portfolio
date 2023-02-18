@@ -16,7 +16,7 @@ const About = () => {
         </div>
         <div className="about_right">
           <p>
-          Passionate about technology and an enthusiastic learner, Love to work on projects involving development using different tech stacks. Hardworking and aspiring to be a creative professional web developer. Moderately experienced in front end development using reactjs library. 
+          Passionate about technology and an enthusiastic learner. Love to work on projects involving development using different tech stacks. Hardworking and aspiring to be a creative professional web developer. Moderately experienced in front end development using reactjs library. 
           </p>
           {bios.map((bio) => {
             return (

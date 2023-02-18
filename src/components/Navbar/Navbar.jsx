@@ -57,7 +57,7 @@ const Navbar = () => {
 
         <div className="social_icons">
           {socialIcons.map((socialIcon, index) => {
-            return <div key={index}>{socialIcon}</div>;
+            return <div k   ey={index}>{socialIcon}</div>;
           })}
         </div>
 

@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  margin-top: -1rem;
 
   button {
     color: #000;
@@ -29,6 +30,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 700px;
+    min-height: 280px;
     gap: 4rem;
 
     .icon {
@@ -43,4 +45,32 @@
       }
     }
   }
+
+
+  .finishes_container{
+    display: flex;
+    place-content: center;
+    margin-top:5rem;
+    gap: 2rem;
+    color: #fff;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #2e2e2ed5;
+    // font-size:  0.85rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px rgba(77, 71, 78, 0.696);
+
+    .number{
+      text-align: center;
+      color: #8c12f0;
+      font-size: 1.7rem;
+    }
+
+
+  }
+
 

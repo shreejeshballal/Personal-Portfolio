@@ -1,0 +1,71 @@
+.project-window {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  place-content: center;
+  gap: 2rem;
+  margin-top: 5rem;
+
+  .card {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hover-layer {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      z-index: 5;
+      padding: 1rem 2rem;
+      background: linear-gradient(to bottom, #5c4d5be5, #5f0a67e5, #4a025ef7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(255, 255, 255);
+
+      h3 {
+        font-size: 1.5rem;
+        height: 70px;
+      }
+
+      .link {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.8rem;
+        
+        a {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background: rgba(176, 7, 195, 0.816);
+          transition: 0.3s ease all;
+          svg {
+
+            color: white;
+          }
+
+          &:hover{
+            background: rgba(186, 8, 206, 0.275);
+        }
+      }
+    }
+  }
+}
+}

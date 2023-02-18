@@ -48,45 +48,55 @@ export const workImages = [
   {
     id: 1,
     img: work1,
-    name: "project 1",
+    name: "Aerophilia Techno Cultural Event",
     category: "web"
   },
   {
     id: 2,
     img: work2,
-    name: "project 2",
+    name: "Family Expense Management System",
     category: "web"
   },
   {
     id: 3,
     img: work3,
-    name: "project 3",
+    name: "Portfolio Template Design",
     category: "web"
   },
   {
     id: 4,
     img: work4,
-    name: "project 4",
+    name: "Modern UI/UX Landing page ",
     category: "app"
   },
-  {
-    id: 5,
-    img: work5,
-    name: "project 5",
-    category: 'app'
-  },
-  {
-    id: 6,
-    img: work6,
-    name: "project 6",
-    category: "design"
-  }
 ]
 
 
 export const workNavs = [
   "All", "Web", "App", "Design"
 ]
+
+export const finishes = [
+  {
+    id: 1,
+    number: '0.5+',
+    itemName: "Years Of Experience"
+  },
+  {
+    id: 2,
+    number: "2+",
+    itemName: "Satisfied Customers"
+  },
+  {
+    id: 3,
+    number: "10+",
+    itemName: "Developed Items"
+  },
+  {
+    id: 4,
+    number: "2+",
+    itemName: "Clients Served"
+  }]
 
 export const contacts = [
   {
