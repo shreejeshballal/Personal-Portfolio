@@ -99,10 +99,13 @@ const Navbar = () => {
         </motion.div>
       </div>
      
-    </motion.div>
-     {scroll? <a href="#" className="back-btn">
+    </motion.div >
+     {scroll? <motion.a initial={{opacity:0,y:+15}} 
+      whileInView={{opacity:1,y:0}}
+      transition={{durantion:1}}
+     href="#" className="back-btn">
      <MdArrowUpward/>
-   </a>:""}
+   </motion.a>:""}
    </>
   );
 };
