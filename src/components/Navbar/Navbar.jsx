@@ -2,6 +2,7 @@ import React, { useState ,useEffect} from "react";
 import "./Navbar.scss";
 import { navLinks, socialIcons } from "../../Data";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { MdArrowUpward } from "react-icons/md";
 import { Variant, motion } from "framer-motion";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -38,7 +39,9 @@ const Navbar = () => {
     });
   }, []);
 
+
   return (
+    <>
     <motion.div initial={{y:-30}} animate={{y:0}} transition={{duration:0.4,ease:"easeInOut"}} className={scroll ? "header active" :"header" }>
       <div className="Nav_container">
         <div className="logo">
@@ -95,7 +98,12 @@ const Navbar = () => {
           })}
         </motion.div>
       </div>
+     
     </motion.div>
+     {scroll? <a href="#" className="back-btn">
+     <MdArrowUpward/>
+   </a>:""}
+   </>
   );
 };
 

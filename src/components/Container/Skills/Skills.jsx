@@ -56,8 +56,9 @@ const Skills = () => {
           frontend.map((frontend, index) => {
             return (
               <motion.div
-                initial={{ opacity: 0, y: -100 }}
+                initial={{ opacity: 0, y: -50 }}
                 animate={{ y: 0, opacity: 1 }}
+                transition={{duration:0.8}}
                 className="icon"
                 key={index}
               >
@@ -72,8 +73,9 @@ const Skills = () => {
               <motion.div
                 div
                 className="icon"
-                initial={{ opacity: 0, y: -100 }}
+                initial={{ opacity: 0, y: -50 }}
                 animate={{ y: 0, opacity: 1 }}
+                transition={{duration:0.8}}
                 key={index}
               >
                 {backend}
@@ -86,8 +88,9 @@ const Skills = () => {
             return (
               <motion.div
                 className="icon"
-                initial={{ opacity: 0, y: -100 }}
+                initial={{ opacity: 0, y: -50 }}
                 animate={{ y: 0, opacity: 1 }}
+                transition={{duration:0.8}}
                 key={index}
               >
                 {other}
