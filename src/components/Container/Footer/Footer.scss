@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background: #30303073;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  color: #fff;
+  gap: 2rem;
+  padding: 1rem 3rem;
+
+  .copyRight {
+    text-align: center;
+    p {
+      font-size: 0.85rem;
+
+      span {
+        color: #8c12f0;
+        font-weight: 800;
+      }
+    }
+  }
+}

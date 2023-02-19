@@ -39,7 +39,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={scroll ? "header active" :"header" }>
+    <motion.div initial={{y:-30}} animate={{y:0}} transition={{duration:0.4,ease:"easeInOut"}} className={scroll ? "header active" :"header" }>
       <div className="Nav_container">
         <div className="logo">
           <h3>S</h3>
@@ -56,8 +56,8 @@ const Navbar = () => {
         </ul>
 
         <div className="social_icons">
-          {socialIcons.map((socialIcon, index) => {
-            return <div k   ey={index}>{socialIcon}</div>;
+          {socialIcons.map((socialIcon) => {
+            return <a href={socialIcon.link} target="blank_">{socialIcon.icon}</a>;
           })}
         </div>
 
@@ -95,7 +95,7 @@ const Navbar = () => {
           })}
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

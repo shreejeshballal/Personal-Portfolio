@@ -14,10 +14,26 @@ import work6 from "./assets/work6.png";
 export const navLinks = ["home", "about", "skills", "projects", "contact"]
 
 export const socialIcons = [
-  <FaInstagram />,
-  <FaLinkedin />,
-  <BsMedium />,
-  <FiGithub/>
+  {
+    id:1,
+    icon:<FaInstagram />,
+    link:"https://www.instagram.com/shreejeshballal/?igshid=ZDdkNTZiNTM%3D"
+  },
+  {
+    id:2,
+    icon:<FaLinkedin />,
+    link:"https://www.linkedin.com/in/shreejesh-j-ballal/"
+  },
+  {
+    id:3,
+    icon:<BsMedium />,
+    link:"https://medium.com/@shreejeshballal"
+  },
+  {
+    id:4,
+    icon:<FiGithub />,
+    link:"https://github.com/shreejeshballal"
+  },
 ]
 
 export const bios = [

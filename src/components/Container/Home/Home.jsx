@@ -1,12 +1,26 @@
 import React from "react";
-import portfolio from "../../../assets/portfolio.JPG";
+import dppic from "../../../assets/dppic.jpg";
 import { motion } from "framer-motion";
 import "./Home.scss";
 const Home = () => {
+  const moveVariants={
+    animation:{
+      y:[0,-15],
+      transition:{
+        repeat:Infinity,
+        repeatType:"mirror",
+        duration:1.8,
+        delay:1
+      }
+    }
+  }
   return (
-    <div className="container" id="home">
+    <motion.div
+    initial={{y:-25,opacity:0}}
+    animate={{y:0,opacity:1}}
+    transition={{duration:0.9,delay:0.5}} className="container" id="home">
       <div className="profile">
-        <img src={portfolio} alt="portfolio-img" />
+        <img src={dppic} alt="portfolio-img" />
       </div>
       <div className="profile_text">
         <h3 className="name">
@@ -15,10 +29,12 @@ const Home = () => {
         <span className="job">Web Developer Based on India</span>
         <span className="text">
           Passionate <br /> to craft innovative <br />
-          web products.
+          web products
         </span>
         <motion.a
-          href="contact"
+          href="#contact"
+          variants={moveVariants}
+          animate="animation"
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}
         >
@@ -28,7 +44,7 @@ const Home = () => {
         <div className="ui">Coder</div>
         <div className="freelance">Freelancer</div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

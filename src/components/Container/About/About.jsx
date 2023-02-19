@@ -6,17 +6,36 @@ import portfolio from "../../../assets/portfolio.JPG";
 const About = () => {
   return (
     <div className="container" id="about">
-      <div className="title">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        transition={{duration:1}}
+        className="title"
+      >
         <span>Who Am I?</span>
         <h1>About Me</h1>
-      </div>
+      </motion.div>
       <div className="about_container">
-        <div className="about_left">
+        <motion.div
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [-250, 0], opacity: 1 }}
+          transition={{duration:1}}
+          className="about_left"
+        >
           <img src={portfolio} alt="about-img" />
-        </div>
-        <div className="about_right">
+        </motion.div>
+        <motion.div
+          className="about_right"
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [+250, 0], opacity: 1 }}
+          transition={{duration:1}}
+        >
           <p>
-          Passionate about technology and an enthusiastic learner. Love to work on projects involving development using different tech stacks. Hardworking and aspiring to be a creative professional web developer. Moderately experienced in front end development using reactjs library. 
+            Passionate about technology and an enthusiastic learner. Love to
+            work on projects involving development using different tech stacks.
+            Hardworking and aspiring to be a creative professional web
+            developer. Moderately experienced in front end development using
+            reactjs library.
           </p>
           {bios.map((bio) => {
             return (
@@ -29,8 +48,15 @@ const About = () => {
               </div>
             );
           })}
-          <motion.a whileHover={{scale:1.1}} transition={{duration:0.3}} href="#" download="">Download Resume</motion.a>
-        </div>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+            href="https://resume.io/r/gJxFWImBx"
+            target="blank_"
+          >
+            Download Resume
+          </motion.a>
+        </motion.div>
       </div>
     </div>
   );

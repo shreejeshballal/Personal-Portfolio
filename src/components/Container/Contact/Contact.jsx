@@ -1,15 +1,25 @@
 import React from "react";
 import { contacts, socialIcons } from "../../../Data";
+import { motion } from "framer-motion";
 import "./Contact.scss";
 const Contact = () => {
   return (
     <div className="container" id="contact">
-      <div className="title">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        className="title"
+      >
         <span>Get in Touch</span>
         <h1>Contact Me</h1>
-      </div>
+      </motion.div>
       <div className="contact_form">
-        <div className="contact_left_container">
+        <motion.div
+          className="contact_left_container"
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [-250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <h3>Got something going on in your mind?</h3>
           <p className="contact_text">
             I have built UI/UX based web applications with all necessary
@@ -24,27 +34,49 @@ const Contact = () => {
             );
           })}
           <div className="social_icons">
-            {socialIcons.map((icon, index) => {
-              return <div key={index}>{icon}</div>;
+            {socialIcons.map((social) => {
+              return (
+                <a key={social.id} href={social.link} target="blank_">
+                  {social.icon}
+                </a>
+              );
             })}
           </div>
-        </div>
-        <div className="contact_right_container">
-          <div className="contact_right">
-            <h3>Get in Touch</h3>
+        </motion.div>
+
+        <motion.div
+          className="contact_right"
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [+250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <h3>Get in Touch</h3>
+          <form
+            action="mailto:shreejeshballal@gmail.com"
+            enctype="text/plain"
+            method="post"
+          >
             <div className="row">
-              <input type="text" placeholder="First Name"/>
-              <input type="text" placeholder="Last Name"/>
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
             </div>
             <div className="row">
-              <input type="number" placeholder="Phone Number"/>
-              <input type="email" placeholder="Email"/>
+              <input type="tel" placeholder="Phone Number" />
+              <input type="email" placeholder="Email" />
             </div>
             <div className="row">
-              <textarea placeholder="messsage"></textarea>
+              <textarea placeholder="Messsage"></textarea>
             </div>
-          </div>
-        </div>
+            <motion.div
+              className="btn"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
+              type="submit"
+            >
+              <a>Send</a>
+            </motion.div>
+          </form>
+        </motion.div>
       </div>
     </div>
   );
