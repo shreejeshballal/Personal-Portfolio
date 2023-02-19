@@ -1,6 +1,7 @@
 import { FaHtml5, FaCss3, FaNodeJs, FaReact, FaSass, FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane, FaDribbble, FaInstagram, FaLinkedin ,FaBootstrap,FaPython,FaJava,FaGitAlt} from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { SiFramer,SiTailwindcss ,SiMysql,SiFirebase,SiCplusplus,SiC,SiVite,SiMongodb} from "react-icons/si";
+import {FiGithub} from "react-icons/fi"
 import { BsMedium } from "react-icons/bs";
 // import portfolio from "./assets/portfolio.jp";
 import work1 from "./assets/work1.png";
@@ -10,12 +11,13 @@ import work4 from "./assets/work4.png";
 import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.png";
 
-export const navLinks = ["home", "about", "skills", "portfolio", "contact"]
+export const navLinks = ["home", "about", "skills", "projects", "contact"]
 
 export const socialIcons = [
   <FaInstagram />,
   <FaLinkedin />,
-  <BsMedium />
+  <BsMedium />,
+  <FiGithub/>
 ]
 
 export const bios = [
@@ -102,16 +104,16 @@ export const contacts = [
   {
     id: 1,
     icon: <FaMapMarkerAlt />,
-    infoText: "16 Road, TharKayTa , Yangon"
+    infoText: "#1-17/388, 2nd Main Road, Landlinks Township , Derebail, Konchady, Mangalore, Karnataka"
   },
   {
     id: 2,
     icon: <FaPaperPlane />,
-    infoText: "abee02@gmail.com"
+    infoText: "shreejeshballal@gmail.com"
   },
   {
     id: 3,
     icon: <FaPhoneAlt />,
-    infoText: "+959-883-271-929"
+    infoText: "+91 8660437070"
   }
 ]
